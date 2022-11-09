@@ -115,7 +115,12 @@ mmpose/.mim
 *.pkl.json
 *.log.json
 *.npy
+checkpoints
+checkpoints/
+work_dirs
 work_dirs/
+vis_results
+vis_results/
 docs/**/topics/
 docs/**/papers/*.md
 docs/**/datasets.md
