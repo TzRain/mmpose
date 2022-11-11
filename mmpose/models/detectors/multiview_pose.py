@@ -17,7 +17,7 @@ from .. import builder
 from ..builder import POSENETS
 from ..utils.misc import torch_meshgrid_ij
 from .base import BasePose
-
+# from .multiview_pose_extention import 
 
 class ProjectLayer(nn.Module):
 
@@ -964,3 +964,4 @@ class VoxelCenterDetector(BasePose):
         initial_cubes = feature_maps[0].new_zeros(batch_size, num_channels,
                                                   *self.cube_size)
         _ = self.center_net(initial_cubes)
+
