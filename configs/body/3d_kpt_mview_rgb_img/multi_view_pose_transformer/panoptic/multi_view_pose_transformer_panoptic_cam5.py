@@ -1,6 +1,6 @@
 _base_ = [
-    '../../../../../_base_/default_runtime.py',
-    '../../../../../_base_/datasets/panoptic_body3d.py'
+    '../../../../_base_/default_runtime.py',
+    '../../../../_base_/datasets/panoptic_body3d.py'
 ]
 checkpoint_config = dict(interval=1)
 evaluation = dict(interval=1, metric='mAP', save_best='mAP')
@@ -21,6 +21,7 @@ total_epochs = 15
 log_config = dict(
     interval=50, hooks=[
         dict(type='TextLoggerHook'),
+        dict(type='WandbLoggerHook')
     ])
 
 space_size = [8000, 8000, 2000]

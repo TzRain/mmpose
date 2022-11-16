@@ -21,6 +21,7 @@ total_epochs = 15
 log_config = dict(
     interval=50, hooks=[
         dict(type='TextLoggerHook'),
+        dict(type='WandbLoggerHook')
     ])
 
 space_size = [8000, 8000, 2000]
